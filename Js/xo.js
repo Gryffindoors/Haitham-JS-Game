@@ -85,8 +85,8 @@ $("#startBtn").click(function () {
         // Check for a draw
         if (clickCount === 9 && !checkWin(player1) && !checkWin(player2)) {
             $("#board").removeClass("text-bg-warning").addClass("text-bg-secondary");
-            $("#info").text("It's a Draw!");
             $("#infoTitle").text("Game Over");
+            $("#info").text("It's a Draw!");
             $(".play-area").off("click"); // Stop game
         }
 
