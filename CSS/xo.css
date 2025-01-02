@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./../Images/pngtree-colorful-kids-background-school-book-happy-birthday-banner-card-cartoon-game-picture-image_1438517.jpg);
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    width: 100vw; 
+    background-size: 100% 100%; 
+    background-repeat:no-repeat; 
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: rgba(232, 103, 103, 0);
+    width: 50%;
+    margin: auto;
+}
+
+h3 {
+    width: 75%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.play-area {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.buttons {
+    bottom: 2%;
+    left: 2%;
+}
+#board{
+    bottom: 0%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    z-index: 100;
+    background-color: black;
+    display: none;
+}
+/* .toast{
+    display: none;
+} */

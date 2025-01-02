@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/xo.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <div class="my-5 py-5">
+            <div>
+                <h1 class="text-center">Tic-Tac-Toe (<i class="fa-solid fa-x"></i><i class="fa-solid fa-o"></i>)</h1>
+            </div>
+            <h3 class="text-center">Welcome to Tic-Tac-Toe, commonly known as (XO) Game</h3>
+            <div class="row">
+                <div class="col-md-9 col-sm-12 position-relative">
+                    <h5>Rules:</h5>
+                    <ul>
+                        <li>Two players can play this game.</li>
+                        <li>Each player will have a symbol, one will have 'X' and the other will have 'O'.</li>
+                        <li>Player 'X' will play first, then player 'O'.</li>
+                        <li>Players will take turns to place their symbol on the board.</li>
+                        <li>The player who succeeds in placing three of their marks in a horizontal, vertical, or
+                            diagonal row wins the game.</li>
+                        <li>If the board is full and no player has won, the game will be a draw.</li>
+                    </ul>
+                    <div class="position-absolute buttons d-flex flex-column">
+                        <button id="startBtn" class="btn btn-success mb-3" type="button">Start Game</button>
+                        <button id="resetBtn" class="btn btn-danger" type="reset">Reset Board</button>
+                    </div>
+                    <div id="board" class="position-absolute card card-body text-bg-warning">
+                        <h4 id="infoTitle" class="text-center"></h4>
+                        <h6 id="info" class="text-center"></h6>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="row mx-auto">
+                        <h2 class="text-center">Let's play</h2>
+                        <div class="col-12 p-3 border border-2 border-dark card bg-success-subtle">
+                            <div class="row">
+                                <div class="col-4 p-2">
+                                    <div id="a1"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="a2"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="a3"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="b1"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div  class="col-4 p-2">
+                                    <div id="b2"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="b3"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="c1"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="c2"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div id="c3"
+                                        class="border border-2 border-dark play-area rounded-2 bg-transparent d-flex align-items-center justify-content-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Js/jquery-3.7.1.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/xo.js" defer></script>
+</body>
+
+</html>
