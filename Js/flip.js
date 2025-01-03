@@ -1,6 +1,6 @@
-let anime = ["./images/anime01.jpg", "./images/anime02.png", "./images/anime03.jpeg", "./images/anime04.png", "./images/anime05.png", "./images/anime06.png", "./images/anime07.jpg", "./images/anime08.jpg", "./images/anime09.jpg", "./images/anime10.jpg", "./images/anime11.jpg", "./images/anime12.jpg"];
-let cartoon = ["./images/cartoon01.jpg", "./images/cartoon02.png", "./images/cartoon03.jpg", "./images/cartoon04.jpg", "./images/cartoon05.png", "./images/cartoon06.png", "./images/cartoon07.jpg", "./images/cartoon08.png", "./images/cartoon09.png", "./images/cartoon10.png", "./images/cartoon11.png", "./images/cartoon12.jpg"];
-let card = ["./images/card01.png", "./images/card02.png", "./images/card03.png", "./images/card04.png", "./images/card05.png", "./images/card06.png", "./images/card07.png", "./images/card08.png", "./images/card09.png", "./images/card10.png", "./images/card11.png", "./images/card12.png"];
+let anime = ["./Images/anime01.jpg", "./Images/anime02.png", "./Images/anime03.jpeg", "./Images/anime04.png", "./Images/anime05.png", "./Images/anime06.png", "./Images/anime07.jpg", "./Images/anime08.jpg", "./Images/anime09.jpg", "./Images/anime10.jpg", "./Images/anime11.jpg", "./Images/anime12.jpg"];
+let cartoon = ["./Images/cartoon01.jpg", "./Images/cartoon02.png", "./Images/cartoon03.jpg", "./Images/cartoon04.jpg", "./Images/cartoon05.png", "./Images/cartoon06.png", "./Images/cartoon07.jpg", "./Images/cartoon08.png", "./Images/cartoon09.png", "./Images/cartoon10.png", "./Images/cartoon11.png", "./Images/cartoon12.jpg"];
+let card = ["./Images/card01.png", "./Images/card02.png", "./Images/card03.png", "./Images/card04.png", "./Images/card05.png", "./Images/card06.png", "./Images/card07.png", "./Images/card08.png", "./Images/card09.png", "./Images/card10.png", "./Images/card11.png", "./Images/card12.png"];
 
 let gameBoard = $("#gameBoard");
 gameBoard.html("");
@@ -13,7 +13,7 @@ let firstClick = null; // Variable to store the first clicked element
 let secondClick = null; // Variable to store the second clicked element
 let isProcessing = false; // Prevents additional clicks while comparing
 
-const placeholderImage = "./images/decoration.jpg";
+const placeholderImage = "./Images/decoration.jpg";
 
 // Shuffle array elements
 function shuffleArray(array) {
