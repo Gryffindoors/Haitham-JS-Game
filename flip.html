@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/flip.css">
+</head>
+
+<body class=" position-relative">
+    <section class="container">
+
+        <div class="my-5 py-5">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div>
+                        <h1 class="text-center">Flip Card</h1>
+                    </div>
+                    <h3 class="text-center">An awsome memory game</h3>
+                    <h5>How to play:</h5>
+                    <p>Flip two cards at a time to find a match. If the cards match, they will remain open. If they
+                        don't
+                        match, they will flip back. The game ends when all the cards are matched.</p>
+                        <h5 class="text-bg-danger w-50 text-center">Please select a Theme first then a size</h5>
+                    <div class="position-fixed buttons d-flex flex-column">
+                        <button id="startBtn" class="btn btn-success mb-3" type="button">Start Game</button>
+                        <button id="resetBtn" class="btn btn-danger" type="reset">Reset Board</button>
+                    </div>
+                    <div id="board" class="position-fixed card card-body text-bg-warning">
+                        <h4 id="infoTitle" class="text-center"></h4>
+                        <h6 id="info" class="text-center"></h6>
+                    </div>
+                    <div id="ddMenus">
+                        <div class="dropdown" id="theme">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Theme
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Anime</a></li>
+                                <li><a class="dropdown-item" href="#">Cartoon</a></li>
+                                <li><a class="dropdown-item" href="#">Numbers</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown mt-3" id="size">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Size
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item sizeIndex" id="8" href="#">8 <i class="fa-solid fa-star" style="color: gold;"></i></a></li>
+                                <li><a class="dropdown-item sizeIndex" id="16" href="#">16 <i class="fa-solid fa-star" style="color: gold;"></i> <i class="fa-solid fa-star" style="color: gold;"></i></a></li>
+                                <li><a class="dropdown-item sizeIndex" id="24" href="#">24 <i class="fa-solid fa-star" style="color: gold;"></i> <i class="fa-solid fa-star" style="color: gold;"></i> <i class="fa-solid fa-star" style="color: gold;"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="row mx-auto d-none" id="game">
+                        <h2 class="text-center">Let's play</h2>
+                        <div class="col-12 p-3 border border-2 border-dark card bg-success-subtle">
+                            <div class="row" id="gameBoard">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Js/jquery-3.7.1.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/flip.js" defer></script>
+</body>
+
+</html>
