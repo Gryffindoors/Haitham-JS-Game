@@ -14,6 +14,14 @@ body {
     background-attachment: fixed;
 }
 
+@media (max-width: 576px) {
+    .play-area {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
 h1 {
     background-color: rgba(232, 103, 103, 0);
     width: 50%;
@@ -42,6 +50,16 @@ h3 {
     background-color: black;
     display: none;
 }
-/* .toast{
-    display: none;
-} */
+.play-area:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.play-area.winner {
+    background-color: yellow;
+    transition: background-color 0.3s ease;
+}
+.winning-line {
+    position: absolute;
+    background-color: red;
+    z-index: 10;
+    border-radius: 5px;
+}
