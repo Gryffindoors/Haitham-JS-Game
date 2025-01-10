@@ -31,7 +31,7 @@ const resetGameElements = () => {
     const descriptionContainer = document.getElementById("description");
     const descriptionText = document.getElementById("descriptionText");
 
-    hangmanImage.src = "./images/hangman/1.png";
+    hangmanImage.src = "./Images/hangman/1.png";
     hangmanImage.style.opacity = 0.5;
 
     progressBarContainer.classList.add("d-none");
@@ -93,7 +93,7 @@ const updateHangmanImage = (word) => {
     }
 
     if (incorrectGuesses <= MAX_GUESSES) {
-        hangmanImage.src = `./images/hangman/${incorrectGuesses}.png`;
+        hangmanImage.src = `./Images/hangman/${incorrectGuesses}.png`;
 
         const progressPercent = incorrectGuesses * 12.5;
         progressBar.style.width = `${progressPercent}%`;
