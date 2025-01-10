@@ -1,21 +1,39 @@
-#gameSelect1, #gameSelect2{
-    transition: 2s ease-in-out;
+.gameSelect {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }
-.text-hover{
-    transition: 3s ease-in-out;
+
+.gameSelect:hover {
+    transform: scale(1.05);
+}
+
+.text-hover {
     position: absolute;
-    top: -100px;
-    z-index: 5;
-    width: 0%;
-    height: 0%;
-    background-color: rgba(255, 0, 0, 0.501);
-}
-.gameSelect:hover .text-hover{
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
 }
-.gameSelect{
-   width: 40%;
+
+.text-hover:hover {
+    opacity: 1;
+}
+
+.game {
+    border-radius: 15px;
+}
+
+.card {
+    border: none;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f3, #8e9eab);
 }

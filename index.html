@@ -8,41 +8,58 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
-<body class="justify-content-center align-items-center" style="height: 100vh;">
-    <div>
-        <h1 class="text-center mt-5">Pick your game</h1>
+<body class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh; background-color: #f8f9fa;">
+    <div class="text-center mb-5">
+        <h1 class="display-4 text-primary">Pick Your Game</h1>
     </div>
     <div class="container">
-        <div class="d-flex justify-content-around align-items-center mx-auto p-5">
-            <div id="gameSelect1" class="gameSelect position-relative p-5">
-                <div class="card rounded-5 overflow-hidden">
-                    <a href="./flip.html"><img src="./Images/cfgame.jpg" alt="" class="game w-100"></a>
-                    <div class="d-flex text-primary align-items-center justify-content-center text-hover start-0">
-                        <h1>Flip Card</h1>
+        <div class="row justify-content-center">
+            <!-- Game Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card gameSelect position-relative shadow-sm">
+                    <a href="./flip.html" aria-label="Flip Card">
+                        <img src="./Images/cfgame.jpg" alt="Flip Card Game" class="card-img-top game">
+                    </a>
+                    <div class="text-hover d-flex align-items-center justify-content-center">
+                        <h2 class="text-light">Flip Card</h2>
                     </div>
                 </div>
             </div>
-            <div id="gameSelect2" class="gameSelect position-relative p-5">
-                <div class="card rounded-5 overflow-hidden">
-                    <a href="./xo.html"><img src="./Images/xogame.png" alt="" class="game w-100"></a>
-                    <div class="d-flex text-primary align-items-center justify-content-center text-hover end-0">
-                        <h1>XO</h1>
+            <!-- Game Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card gameSelect position-relative shadow-sm">
+                    <a href="./xo.html" aria-label="XO Game">
+                        <img src="./Images/xogame.png" alt="Tic Tac Toe Game" class="card-img-top game">
+                    </a>
+                    <div class="text-hover d-flex align-items-center justify-content-center">
+                        <h2 class="text-light">XO</h2>
                     </div>
                 </div>
             </div>
-            <div id="gameSelect3" class="gameSelect position-relative p-5">
-                <div class="card rounded-5 overflow-hidden">
-                    <a href="./rps.html"><img src="./Images/RPS Rules.png" alt="" class="game w-100"></a>
-                    <div class="d-flex text-primary text-center align-items-center justify-content-center text-hover end-0">
-                        <h1>Rock-Paper-Scissors</h1>
+            <!-- Game Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card gameSelect position-relative shadow-sm">
+                    <a href="./rps.html" aria-label="Rock Paper Scissors Game">
+                        <img src="./Images/RPS Rules.png" alt="Rock Paper Scissors Game" class="card-img-top game">
+                    </a>
+                    <div class="text-hover d-flex align-items-center justify-content-center">
+                        <h2 class="text-light">Rock-Paper-Scissors</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card gameSelect position-relative shadow-sm">
+                    <a href="./hangman.html" aria-label="Hangman Game">
+                        <img src="./Images/hangman/hngmn.png" alt="Hangman Game" class="card-img-top game">
+                    </a>
+                    <div class="text-hover d-flex align-items-center justify-content-center">
+                        <h2 class="text-light">Hangman</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
-
     <script src="./Js/all.min.js"></script>
     <script src="./Js/bootstrap.bundle.min.js"></script>
     <script src="./Js/jquery-3.7.1.js"></script>
